@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="card col-md-4 my-3 "  *ngFor="let n of newapi">
+            <img [src]="n.urlToImage" class="card-img-top" >
+            <div class="card-body">
+                <h3 class="card-title text-center">{{n.name}}</h3>
+                <h2 class="card-text text-center" >{{n.title}}</h2>
+                <h5 class="card-text text-center" >{{n.publishedAt}}</h5>
+            </div>
+        </div>
+    </div>
+    </div>
+
+ 

@@ -1,0 +1,27 @@
+<!-- <div *ngFor="let n of newapi">
+<img [src]="n.urlToImage" width="100px" >
+    <h6>{{n.title}}</h6>
+</div> -->
+
+<table class="table my-5 text-center" style="width:95% ; margin:auto;" >
+    <thead class="thead-dark">
+      <tr>
+        <th>Name</th>
+        <th>DateOfBirth</th>
+        <th>Service</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Salary</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let a of aray">
+      <tr>
+        <td>{{a.name | pipe:a.gender}}</td>
+        <td>{{a.dataofbirt | date}}</td>
+        <td>{{a.service | service}}</td>
+        <td>{{a.dataofbirt | age}}</td>
+        <td>{{a.gender}}</td>
+        <td>{{a.salary | currency}}</td>
+      </tr>
+    </tbody>
+  </table>

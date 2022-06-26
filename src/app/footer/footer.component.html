@@ -1,0 +1,11 @@
+<div class="container">
+<div class="row">
+    <div class="card col-md-3 my-4 mx-4"  *ngFor="let s of photo">
+        <img [src]="s.url" class="card-img-top" >
+        <div class="card-body">
+            <h3 class="card-title text-center">{{s.id}}</h3>
+            <h4 class="card-text text-center" >{{s.title}}</h4>
+        </div>
+    </div>
+</div>
+</div>
